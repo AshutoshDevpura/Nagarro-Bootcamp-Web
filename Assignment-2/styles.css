@@ -1,0 +1,87 @@
+.app > h1 {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.app_wrapper {
+  width: 70%;
+  margin: auto;
+  padding: 1%;
+  font-family: "Poppins";
+}
+
+.app_alphabetsHeader > p {
+  font-size: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 300;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 0px;
+}
+
+.app_alphabetsHeaderbottom {
+  display: flex;
+  width: 50%;
+  margin: auto auto 10px auto;
+  padding: 0.5%;
+  border-radius: 20px;
+  justify-content: space-between;
+  border-bottom: 1px solid lightgray;
+}
+
+.app_alphabetsHeaderbottom:hover {
+  background-color:royalblue
+}
+
+.app_alphabetsInitial {
+  margin: auto;
+  height: 50px;
+  width: 50px;
+  background-color: coral;
+  border-radius: 50%;
+  font-size: 22px;
+}
+
+.app_alphabetsInitial > p {
+  margin: 10px auto 0px !important;
+  text-align: center;
+}
+
+.app_alphabetsNames {
+  margin-left: 10px;
+  text-align: center;
+  font-size: 18px;
+  margin: auto;
+  flex: 0.7;
+  display: flex;
+  flex-direction: column;
+}
+
+.app_alphabetsNames > p {
+  margin: 0%;
+}
+
+.app_alphabetsIcon {
+  margin: auto;
+  text-align: center;
+}
+
+@media screen and (max-width: 750px) {
+  .app_wrapper {
+    width: 95%;
+  }
+
+  .app_alphabetsHeaderbottom {
+    display: flex;
+    width: 90%;
+    padding: 1%;
+  }
+  .app_alphabetsHeader > p {
+    text-align: left;
+    margin-top: 20px;
+  }
+}
+
+body{
+  background-color:lightsteelblue
+}
