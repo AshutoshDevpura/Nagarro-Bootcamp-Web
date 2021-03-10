@@ -1,0 +1,178 @@
+.app {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+  display: flex;
+}
+
+.header_left {
+  padding: 0% 1%;
+  flex: 0.4;
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+  letter-spacing: 2px;
+  color: gray;
+}
+
+.header_left > p:nth-child(1):hover,
+.header_left > p:nth-child(2):hover,
+.header_left > p:nth-child(3):hover {
+  color: black;
+  cursor: pointer;
+}
+
+.header_right {
+  font-size: 20px;
+  letter-spacing: 2px;
+  color: gray;
+  padding: 0% 1%;
+  flex: 0.6;
+  text-align: right;
+}
+
+.header_right > p:hover {
+  color: black;
+  cursor: pointer;
+}
+
+.body_images {
+  position: relative;
+  margin: 0 auto;
+  height: 60vh;
+  width: 100%;
+}
+
+.body_images > img {
+  height: 60vh;
+  width: 100%;
+  min-width: 200px;
+  object-fit: contain;
+  position: absolute;
+  animation-name: fade;
+  animation-iteration-count: infinite;
+  animation-duration: 6s;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  33% {
+    opacity: 1;
+  }
+  53% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.body_images2 {
+  animation-delay: -4s;
+}
+
+.body_images3 {
+  animation-delay: -2s;
+}
+
+.body_cards {
+  display: flex;
+  padding: 2%;
+  width: 100%;
+  margin: auto;
+}
+
+.body_cards1,
+.body_cards2,
+.body_cards3,
+.body_cards4 {
+  height: 200px;
+  width: 200px;
+  margin: 10px;
+}
+
+.body_cards1 > img,
+.body_cards2 > img,
+.body_cards3 > img,
+.body_cards4 > img {
+  height: 200px;
+  width: 200px;
+  object-fit: cover;
+}
+
+.body_cardsDuo {
+  margin: auto;
+  display: flex;
+  flex: 0.5;
+  justify-content: space-around;
+}
+
+.footer {
+  background-color: #f7f7f7;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.footer > p {
+  font-size: 20px;
+  text-align: center;
+}
+
+.footer_left > div,
+.footer_middle > div {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer_right > div {
+  display: flex;
+}
+
+@media screen and (max-width: 700px) {
+  .header_right,
+  .header_left {
+    font-size: 15px;
+  }
+
+  .body_cardsDuo {
+    flex-direction: column;
+  }
+
+  .body_cards {
+    flex-direction: column;
+  }
+
+  .fa {
+    padding: 0px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+   
+  }
+  
+  .fa:hover {
+    opacity: 0.7;
+  }
+  
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+
+  }
+  
+
+  .fa-linkedin {
+    background: #55ACEE;
+    color: white;
+  }
+  
+
+}
